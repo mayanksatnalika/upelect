@@ -1,7 +1,7 @@
 import smtplib
 server = smtplib.SMTP('smtp.gmail.com', 587)
 server.starttls()
-server.login("satnalikamayank12@gmail.com", "Anjuaarushi.11")
+server.login("satnalikamayank12@gmail.com", "wkurfgeluqmcixlf")
 def msgme(msg):
     import smtplib
     server = smtplib.SMTP('smtp.gmail.com', 587)
