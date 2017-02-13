@@ -1,6 +1,6 @@
 import time
 from dateutil import parser
-import matplotlib.pyplot as plt
+#import matplotlib.pyplot as plt
 import calendar
 import pymongo
 import datetime
@@ -56,7 +56,7 @@ class MyStreamListener(tweepy.StreamListener):
                 dicti = {}
                 dicti['tweet_text'] = datajson['text']
                 dicti['date'] = now
-                print dicti
+                #print dicti
                 myjson = json.dumps(dicti)
                 c = json.loads(myjson)
 
@@ -64,7 +64,7 @@ class MyStreamListener(tweepy.StreamListener):
                 db.upradesh_tweets.insert_one(c)
                 print("inserted")
                 count +=1
-                if count%5 == 0:
+                if count%25 == 0:
                     msgstr = 'current count is '+ str(count)
                     msgme(msgstr)
 
