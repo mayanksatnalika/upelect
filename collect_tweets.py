@@ -86,8 +86,7 @@ myStream = tweepy.Stream(auth = api.auth, listener=myStreamListener)
 
 myStream.filter(track =
                 ['@BJP4UP', '@narendramodi','@BJP4India',
-                 '@yadavakhilesh', '@Samajwadi_Party' ,
-                  ,'@OfficeOfRG','@UPCC_Official','@INCIndia',
-                 '@BSP4India','#bsp',
-                ]
+                 '@yadavakhilesh', '@Samajwadi_Party',
+                '@OfficeOfRG','@UPCC_Official','@INCIndia',
+                 '@BSP4India','#bsp' ]
                )
